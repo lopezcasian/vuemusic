@@ -2,6 +2,7 @@
   #app
     img(src='dist/logo.png')
     h1 VueMusic
+    h3 Top artist in:
     select(v-model="selectedCountry")
       option(v-for="country in countries" v-bind:value="country.value") {{ country.name }}
     spinner(v-show="loading")
