@@ -1,6 +1,6 @@
 <template lang="pug">
   #app
-    img(src='dist/logo.png')
+    img(src='dist/logo.png' width="100px")
     h1 VueMusic
     h3 Top artist in:
     select(v-model="selectedCountry")
@@ -14,6 +14,7 @@
 import Artist from './components/Artist.vue';
 import Spinner from './components/Spinner.vue';
 import getArtists from './api';
+
 export default {
   name: 'app',
   data () {
